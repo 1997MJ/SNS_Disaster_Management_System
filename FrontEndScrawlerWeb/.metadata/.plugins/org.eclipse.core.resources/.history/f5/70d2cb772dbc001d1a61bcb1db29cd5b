@@ -1,0 +1,48 @@
+/**
+ * 
+ */
+
+let today = new Date();
+
+let year = today.getFullYear();
+let month = ('0' + (today.getMonth() + 1)).slice(-2);
+let day = ('0' + today.getDate()).slice(-2);
+
+var dateString = year + '-' + month + '-' + day;
+/*페이지 카운트 */
+$.ajax({
+	url: "http://localhost:2000/countTotalAndToday",
+	type: "get",
+	data: { "date": dateString },
+	
+});
+/*카운팅 불러오기*/
+$.ajax({
+	url: "http://localhost:2000/showToday",
+	type: "get",
+	success: function(dto) {
+		$("#main_click_count_today").text(dto.today);
+		$("#main_click_count_total").text(dto.total);
+	},
+	error: function() {
+		alert("counting error");
+	}
+});
+/*sns 트윗 글 불러오기*/
+/*$.ajax({
+	url: "http://localhost:2000/todayTweet",
+	type: "get",
+	success: function(dto) {
+		$("#main_click_count_today").text(dto.today);
+		$("#main_click_count_total").text(dto.total);
+	},
+	error: function() {
+		alert("counting error");
+	}
+});
+*/
+
+
+
+
+

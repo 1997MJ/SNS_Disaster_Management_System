@@ -1,0 +1,89 @@
+body{
+    font-family: 'NanumSquareNeo';
+    
+}
+
+.twitter{
+    font-size: 20px;
+    font-weight: bold;
+    color:#00acee;
+}
+
+.instagram{
+    font-size: 20px;
+    font-weight: bold;
+    color:#E4405F;
+}
+
+.naver{
+    font-size: 20px;
+    font-weight: bold;
+    color:#03C75A;
+}
+
+.naverBlogCafe{
+    font-size: 20px;
+    font-weight: bold;
+    color:#03C75A;
+}
+
+.average{
+    font-size: 20px;
+    font-weight: bold;
+    color:black;
+}
+.bold{
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+
+#myChart{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'NanumSquareNeo';
+
+}
+
+tr:hover{
+    background-color:#d9daf3 !important;
+    transition: .5s;
+    }
+
+.earthquake{
+    color: #A52A2A;
+    font-size: 20px;
+    font-weight: bold;
+}
+.heavysnow{
+    color:#ADD8E6;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.Traffic{
+    color: #FF0000;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.fire{
+    color: #FFA500;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.typhoon{
+    color: #0000FF;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.stampede{
+    color: #A9A9A9;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+

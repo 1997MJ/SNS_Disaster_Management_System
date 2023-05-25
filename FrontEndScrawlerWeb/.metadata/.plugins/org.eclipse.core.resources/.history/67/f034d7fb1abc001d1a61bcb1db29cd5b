@@ -1,0 +1,21 @@
+/**
+ * 
+ */
+ 
+$(document).ready(function(){
+	
+	/*페이지 카운트 */
+	$.ajax({
+		url:"http://localhost:2000/countToday",
+		type:"get"
+		
+	});
+	$("#main_click_count_today").text("dd");
+	
+	
+	
+	
+});
+ 
+ 
+ 

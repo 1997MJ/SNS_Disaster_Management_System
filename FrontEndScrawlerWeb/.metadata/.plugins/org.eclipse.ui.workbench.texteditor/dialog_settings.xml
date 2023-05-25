@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value="main_rank_name"/>
+		<item key="wrap" value="true"/>
+		<item key="casesensitive" value="false"/>
+		<item key="wholeword" value="false"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="false"/>
+		<list key="findhistory">
+			<item value="main_rank_name"/>
+			<item value="main_today_SNS_click"/>
+			<item value="1"/>
+			<item value="main_total_SNS_click"/>
+			<item value="click"/>
+			<item value="total ave"/>
+			<item value="total"/>
+			<item value="mainpage"/>
+			<item value="mainpage.js"/>
+			<item value="jquery-"/>
+			<item value="&lt;script  src=&quot;http://code.jquery.com/jquery-latest.min.js&quot;&gt;&lt;/script&gt;  &lt;!-- jquery 최신 주소 --&gt;"/>
+			<item value="js"/>
+			<item value="active"/>
+			<item value="관련 뉴스"/>
+			<item value="관련 뉴수"/>
+		</list>
+		<list key="replacehistory">
+			<item value="mainPage.html"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="383"/>
+		<item key="DIALOG_Y_ORIGIN" value="707"/>
+		<item key="DIALOG_WIDTH" value="412"/>
+		<item key="DIALOG_HEIGHT" value="460"/>
+		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.6|0|WINDOWS|1|-32|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
+	</section>
+</section>

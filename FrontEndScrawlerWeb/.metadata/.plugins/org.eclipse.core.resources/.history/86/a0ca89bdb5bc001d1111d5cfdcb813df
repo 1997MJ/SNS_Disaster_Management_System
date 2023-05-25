@@ -1,0 +1,26 @@
+let rank_names_data=["1","2","3","4","5","6"];
+let sns_click_data=["1","2","3","4","5","6"];
+
+
+$(document).ready(function(){
+  let rank_name=document.getElementsByClassName("main_rank_name");
+  let sns_click_Total=document.getElementsByClassName("main_total_SNS_click");
+  let sns_click_Today=document.getElementsByClassName("main_today_SNS_click");
+
+for(let i=0;i<rank_name.length;i++){
+  rank_name[i].innerHTML=sns_click_data[i];
+}
+
+for(let i=0;i<sns_click_Total.length;i++){
+  sns_click_Total[i].innerHTML=sns_click_data[i];
+}
+for(let i=0;i<sns_click_Today.length;i++){
+  sns_click_Today[i].innerHTML=sns_click_data[i];
+}
+let main_today= document.getElementById("main_click_count_today");
+let main_total= document.getElementById("main_click_count_total");
+
+
+
+});
+

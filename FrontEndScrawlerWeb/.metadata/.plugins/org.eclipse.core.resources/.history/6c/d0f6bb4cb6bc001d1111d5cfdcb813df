@@ -1,0 +1,80 @@
+/**
+ * 
+ */
+
+let today = new Date();
+
+let year = today.getFullYear();
+let month = ('0' + (today.getMonth() + 1)).slice(-2);
+let day = ('0' + today.getDate()).slice(-2);
+
+var dateString = year + '-' + month + '-' + day;
+/*페이지 카운트 */
+$.ajax({
+	url: "http://localhost:2000/countTotalAndToday",
+	type: "get",
+	data: { "date": dateString },
+	success: function(dto) {
+		
+	},
+	error: function() {
+		
+	}
+});
+
+/*카운팅 불러오기*/
+$.ajax({
+	url: "http://localhost:2000/showToday",
+	type: "get",
+	data: { "date": dateString },
+	success: function(dto) {
+		$("#main_click_count_today").text(dto.today);
+		$("#main_click_count_total").text(dto.total);
+	},
+	error: function() {
+		alert("counting error");
+	}
+});
+
+let rank_names_data=["3","2","3","4","5","6"];
+let sns_click_data=["3","2","3","4","5","6"];
+
+
+
+let rank_name=document.getElementsByClassName("main_rank_name");
+let sns_click_Total=document.getElementsByClassName("main_total_SNS_click");
+let sns_click_Today=document.getElementsByClassName("main_today_SNS_click");
+
+for(let i=0;i<rank_name.length;i++){
+  rank_name[i].innerHTML=sns_click_data[i];
+}
+
+for(let i=0;i<sns_click_Total.length;i++){
+  sns_click_Total[i].innerHTML=sns_click_data[i];
+}
+for(let i=0;i<sns_click_Today.length;i++){
+  sns_click_Today[i].innerHTML=sns_click_data[i];
+}
+let main_today= document.getElementById("main_click_count_today");
+let main_total= document.getElementById("main_click_count_total");
+
+
+
+/*today sns 트윗수 불러오기*/
+$.ajax({
+	url: "http://localhost:2000/TweetCountNumberList",
+	type: "get",
+	data: { "snsName":"twitter",
+			"snsName":"instargram"
+	},
+	success: function(list) {
+		alert(list);
+	},
+	error: function() {
+		alert("counting error");
+	}
+});
+
+
+
+

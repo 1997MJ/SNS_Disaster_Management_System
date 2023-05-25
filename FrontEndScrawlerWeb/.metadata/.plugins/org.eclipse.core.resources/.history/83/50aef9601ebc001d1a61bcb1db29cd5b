@@ -1,0 +1,42 @@
+/**
+ * 
+ */
+ 
+$(document).ready(function(){
+	var today = new Date();
+
+	var year = today.getFullYear();
+	var month = ('0' + (today.getMonth() + 1)).slice(-2);
+	var day = ('0' + today.getDate()).slice(-2);
+
+	var dateString = year + '-' + month  + '-' + day;
+	/*페이지 카운트 */
+	$.ajax({
+		url:"http://localhost:2000/countToday",
+		type:"get",
+		date:{date:dateString}
+	});
+	/*카운팅 불러오기*/
+	$.ajax({
+		url:"http://localhost:2000/showToday",
+		type:"get",
+		success:function(dto){
+			$("#main_click_count_today").text(dto.today);
+			$("#main_click_count_total").text(dto.total);
+		},
+		error:function(){
+			alert("counting error");
+		}
+	});
+	
+	
+	
+	
+	
+	
+	
+	
+});
+ 
+ 
+ 

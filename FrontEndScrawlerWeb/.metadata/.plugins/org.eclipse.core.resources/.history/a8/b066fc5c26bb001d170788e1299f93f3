@@ -1,0 +1,327 @@
+
+<!DOCTYPE html>
+
+<!-- =========================================================
+* Sneat - Bootstrap 5 HTML Admin Template - Pro | v1.0.0
+==============================================================
+
+* Product Page: https://themeselection.com/products/sneat-bootstrap-html-admin-template/
+* Created by: ThemeSelection
+* License: You must have a valid license purchased in order to legally use the theme for your project.
+* Copyright ThemeSelection (https://themeselection.com)
+
+=========================================================
+ -->
+<!-- beautify ignore:start -->
+<html
+  lang="en"
+  class="light-style layout-menu-fixed"
+  dir="ltr"
+  data-theme="theme-default"
+  data-assets-path="../assets/"
+  data-template="vertical-menu-template-free"
+>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
+    />
+
+    <title>재난 현황 Web</title>
+    <meta name="description" content="" />
+
+     <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon/favicon.ico" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons. Uncomment required icon fonts -->
+    <link rel="stylesheet" href="./assets/vendor/fonts/boxicons.css" />
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="./assets/vendor/css/core.css" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="./assets/vendor/css/theme-default.css" class="template-customizer-theme-css" />
+    <link rel="stylesheet" href="./assets/css/demo.css" />
+    <link rel="stylesheet" href="./assets/css/text.css" />
+    <!-- Vendors CSS -->
+    <link rel="stylesheet" href="./assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+
+    <link rel="stylesheet" href="./assets/vendor/libs/apex-charts/apex-charts.css" />
+
+
+    <!-- Page CSS -->
+
+    <!-- Helpers -->
+    <script src="./assets/vendor/js/helpers.js"></script>
+
+    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+    <!-- <script src="../assets/js/config.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+  </head>
+
+  <body>
+    <!-- Layout wrapper -->
+    <div class="layout-wrapper layout-content-navbar">
+      <div class="layout-container">
+        <!-- Menu -->
+
+        <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
+          <div class="app-brand demo">
+            <a href="mainPage.html" class="app-brand-link">
+              <span class="app-brand-logo demo">
+                <img src="./img/siren.png" width="25px">
+                  
+              </span>
+              <span class="app-brand-text demo menu-text fw-bolder ms-2">재난 관리</span>
+            </a>
+
+            <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
+              <i class="bx bx-chevron-left bx-sm align-middle"></i>
+            </a>
+          </div>
+
+          <div class="menu-inner-shadow"></div>
+
+          <ul class="menu-inner py-1">
+            <!-- Dashboard -->
+            <li class="menu-item">
+              <a href="mainPage.html" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-home-circle"></i>
+                <div data-i18n="Analytics">공홈</div>
+              </a>
+            </li>
+
+            
+
+         <li class="menu-header small text-uppercase">
+              <span class="menu-header-text">Pages</span>
+            </li>
+            <li class="menu-item">
+              <a href="TopicPage.html" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-collection"></i>
+                <div data-i18n="Basic">토픽 별 재난현황</div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="NewsPage.html" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-collection"></i>
+                <div data-i18n="Basic">실시간 관련 뉴스</div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="cctvPage.html" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-collection"></i>
+                <div data-i18n="Basic">지역 별 cctv</div>
+              </a>
+            </li>
+          
+           
+
+          </ul>
+        </aside>
+        <!-- / Menu -->
+
+        <!-- Layout container -->
+        <div class="layout-page">
+          <!-- Navbar -->
+
+          <nav
+            class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
+            id="layout-navbar"
+          >
+            <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
+              <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
+                <i class="bx bx-menu bx-sm"></i>
+              </a>
+            </div>
+
+            <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
+              <!-- Search -->
+              <div class="navbar-nav align-items-center">
+                <div class="nav-item d-flex align-items-center">
+                  <i class="bx bx-search fs-4 lh-0"></i>
+                  <input
+                    onkeypress="show_input_page(event)"
+                    id="input_val"
+                    type="text"
+                    class="form-control border-0 shadow-none"
+                    placeholder="Search..."
+                    aria-label="Search..."
+                  />
+                </div>
+              </div>
+              <!-- /Search -->
+
+            </div>
+          </nav>
+
+          <!-- / Navbar -->
+
+      <!-- Content wrapper -->
+      <div class="content-wrapper">
+        <!-- Content -->
+        <div class="container-xxl flex-grow-1 container-p-y">
+          <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light"><mark style="background-color: 	#E0EBFF;" >#<span class="localName"></span></mark> </span> 관련 뉴스</h4>
+            <!-- Basic Bootstrap Table -->
+            <div class="card">
+              <div class="table-responsive text-nowrap">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      
+                      <th>기사 제목</th>
+                      <th>기사 링크</th>
+                    </tr>
+                  </thead>
+                  <tbody class="table-border-bottom-0">
+
+                    <tr class="page3_news">
+                      
+                      <td>‘힌남노’ 피해 포항 주민들 “물길 건드리는 게 아냐”</td>
+                      <td><a href="https://h21.hani.co.kr/arti/society/environment/52626.html">https://h21.hani.co.kr/arti/society/environment/52626.html</a></td>
+
+                    </tr>
+                    <tr  class="page3_news">
+                     
+                      <td>태풍 힌남노가 몰고온 포항 ‘참극’k</td>
+                      <td><a href="https://m.khan.co.kr/national/national-general/article/202209061925001#c2b">https://m.khan.co.kr/national/national-general/article/202209061925001#c2b</a></td>
+
+                    </tr>
+                    <tr class="page3_news">
+                      
+                      <td>힌남노 직격 포항에 강한 비바람…주민 대피</td>
+                      <td><a href="https://www.yonhapnewstv.co.kr/news/MYH20220919006500641">https://www.yonhapnewstv.co.kr/news/MYH20220919006500641</a></td>
+
+                    </tr>
+
+                    <tr class="page3_news">
+                      
+                      <td> 포항·경주에 힌남노 물폭탄…태풍의 이런 특징 때문이었다</td>
+                      <td><a href="https://news.mt.co.kr/mtview.php?no=2022090711153885518">  https://news.mt.co.kr/mtview.php?no=2022090711153885518</a></td>
+
+                    </tr>
+                    <tr class="page3_news">
+                      
+                      <td>포항 지하주차장 생존자들, 어떻게 살아남았나</td>
+                      <td><a href="https://www.yna.co.kr/view/AKR20220907000500053"> https://www.yna.co.kr/view/AKR20220907000500053 </a></td>
+
+                    </tr>
+                    <tr class="page3_news">
+                      
+                      <td>태풍 ‘힌남노’ 포항 부근 동해상 북동진…앞으로 영향은?</td>
+                      <td><a href="https://news.kbs.co.kr/news/view.do?ncd=5550046">  https://news.kbs.co.kr/news/view.do?ncd=5550046</a></td>
+
+                    </tr>
+                    <tr class="page3_news">
+                      
+                      <td>힌남노' 태풍 피해 한 달…포항 이재민 여전히 텐트서 '오들오들'</td>
+                      <td><a href="https://www.nocutnews.co.kr/news/5828173"> https://www.nocutnews.co.kr/news/5828173 </a></td>
+
+                    </tr>
+                    <tr class="page3_news">
+                      
+                      <td>제보로 본 태풍 '힌남노'의 흔적...포항서 최소 8명 추가 실종 신고</td>
+                      <td><a href="https://www.ytn.co.kr/_ln/0103_202209061640411358"> https://www.ytn.co.kr/_ln/0103_202209061640411358 </a></td>
+
+                    </tr>
+                    <tr class="page3_news">
+                      
+                      <td>태풍 힌남노 피해 포항에 집중···10명 숨져</td>
+                      <td><a href="https://dgmbc.com/article/10McNLQyQld1ucQpW">  https://dgmbc.com/article/10McNLQyQld1ucQpW</a></td>
+
+                    </tr>
+                    <tr class="page3_news">
+                      
+                      <td>포항시, 태풍 '힌남노' 피해 극복 대시민 호소문 발표</td>
+                      <td><a href="https://www.kbmaeil.com/news/articleView.html?idxno=938380">  https://www.kbmaeil.com/news/articleView.html?idxno=938380</a></td>
+
+                    </tr>
+                    <tr class="page3_news">
+                      
+                      <td>태풍 ‘힌남노’ 피해 ‘사망 11명·실종 1명’···포항·경주 특별재난지역 선포</td>
+                      <td><a href="https://m.khan.co.kr/national/national-general/article/202209071917001#c2b">  https://m.khan.co.kr/national/national-general/article/202209071917001#c2b</a></td>
+
+                    </tr>
+                    <tr class="page3_news">
+                      
+                      <td>늘어나는 ‘힌남노’ 인명피해…포항 지하주차장 등 3곳서 9명 실종</td>
+                      <td><a href="https://www.sisajournal.com/news/articleView.html?idxno=245901">  https://www.sisajournal.com/news/articleView.html?idxno=245901</a></td>
+
+                    </tr>
+                   
+
+
+
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <!--/ Basic Bootstrap Table -->
+
+
+
+
+          </div>
+         </div>
+            
+                <!--/ Vertical & Horizontal Scrollbars -->
+             
+            <!-- / Content -->
+
+           
+
+            <div class="content-backdrop fade"></div>
+          </div>
+          <!-- Content wrapper -->
+        </div>
+        <!-- / Layout page -->
+      </div>
+
+      <!-- Overlay -->
+      <div class="layout-overlay layout-menu-toggle"></div>
+    </div>
+    <!-- / Layout wrapper -->
+
+    
+
+    <!-- Core JS -->
+    <!-- build:js assets/vendor/js/core.js -->
+    <script src="./assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="./assets/vendor/libs/popper/popper.js"></script>
+    <script src="./assets/vendor/js/bootstrap.js"></script>
+    <!-- <script src="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script> -->
+
+    <script src="./assets/vendor/js/menu.js"></script>
+    <!-- endbuild -->
+
+    <!-- Vendors JS -->
+    <!-- <script src="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script> -->
+
+    <!-- Main JS -->
+    <script src="./assets/js/main.js"></script>
+
+    <!-- Page JS -->
+    <!-- <script src="../assets/js/extended-ui-perfect-scrollbar.js"></script> -->
+
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <!-- map 그래프 -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+    <!-- <script type="text/javascript" src="../assets/js/chart2.js"></script> -->
+    <script type="text/javascript" src="./assets/js/test.js"></script>
+
+  </body>
+</html>

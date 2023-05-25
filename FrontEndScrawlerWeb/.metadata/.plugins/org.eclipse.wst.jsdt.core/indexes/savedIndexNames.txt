@@ -1,0 +1,8 @@
+INDEX VERSION 1.4+C:\FrontEndScrawlerWeb\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+4114514053.index
+4046426927.index
+524798305.index
+2059349299.index
+2221819658.index
+1385221327.index
+449384428.index
