@@ -37,7 +37,7 @@
 - pips.txt를 통해 모듈을 설치해주세요
 
 
-## 화면 UI
+## 💻 화면 UI
 #### 메인 페이지 
 <img width="80%" src="https://user-images.githubusercontent.com/86345166/240898171-4ed4dee0-92a0-49e3-b0b7-175c003b3c9c.png"/>
 
@@ -61,6 +61,6 @@
 -검색한 키워드(토픽)와 관련해 수집해온 모든 게시글 데이터가 표시되며 해당 게시글을 a태그(링크)로 설정하였기 때문에 해당 내용을 누르게 되면 그 SNS 게시글로 이동하게 됨
 
 
-## 서버 주소
+## 🔗 서버 주소
 
 - https://github.com/1997MJ/SNS_Disaster_Management_System_Server
