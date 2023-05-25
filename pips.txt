@@ -1,0 +1,15 @@
+pip install pytz
+pip install python-core
+pip install emoji
+pip install mysqlclient
+pip install pandas
+pip install gensim
+pip install konlpy
+pip install kss
+pip install -U scikit-learn
+pip install seaborn
+pip install selenium 
+pip install pyautogui
+pip install pyperclip
+pip install bs4
+pip install snscrape
