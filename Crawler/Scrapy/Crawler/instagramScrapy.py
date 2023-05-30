@@ -65,20 +65,25 @@ class instagramCrawlerClass:
         is_success_login = False
         service= "instagram"
 
+        # 아이디와 비밀번호를 입력해주세요.
+        id=''
+        password=''
+
         try: 
             # find id
             id = driver.find_element(By.CSS_SELECTOR, '#loginForm > div > div:nth-child(1) > div > label > input')
             id.click()
-            # id.send_keys('mso82300@gmail.com')
-            pyperclip.copy('mso82300@gmail.com')
+           
+            pyperclip.copy(id)
+            
             pyautogui.hotkey('ctrl', 'v')
             time.sleep(2)
 
             # find pw
             pw = driver.find_element(By.CSS_SELECTOR, '#loginForm > div > div:nth-child(2) > div > label > input')
             pw.click()
-            # pw.send_keys('chlghddlf1@')
-            pyperclip.copy('chlghddlf123')
+
+            pyperclip.copy(password)
             pyautogui.hotkey('ctrl', 'v')
             time.sleep(1)
 

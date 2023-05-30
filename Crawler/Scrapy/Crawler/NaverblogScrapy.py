@@ -11,8 +11,8 @@ class naverBlogCafeCrawlerClass:
         self.service="naverBlogCafe"
         
     def run(self): 
-        client_id = "Cg6xqax1J9Svdmz5zGJU"
-        client_secret = "3b3qfBSVQ4"
+        client_id = ""
+        client_secret = ""
         
         for keyword in self.keywords:
             # 블로그

@@ -9,10 +9,10 @@ import utility.util as util
 import utility.DB_Utility as db
 
 # 트위터 Application에서 발급 받은 key 정보들 문자열로 입력
-consumer_key = "F461VVGA91pv2Gfy1WvkxetLO"
-consumer_secret = 'Gp2GRRuaKf1u2RWpPfch8kYkdSt8YJRwmB3i3yZqTb9C30Rt9k'
-access_token = '1592500962065002496-lIVpGackch3MP67Bt7HQOHtgDCVW5f'
-access_token_secret = '1AHnM2rs7c0ipcHjyG0HpzFtFTPyfMvvfxZhFLNTAKNYc'
+consumer_key = ""
+consumer_secret = ''
+access_token = ''
+access_token_secret = ''
 
 # 1. 트위터 키 입력
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
